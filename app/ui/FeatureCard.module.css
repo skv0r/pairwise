@@ -1,0 +1,20 @@
+.card {
+    padding: 20px;
+
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+}
+
+.card__title {
+    margin-bottom: 8px;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card__text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+}
