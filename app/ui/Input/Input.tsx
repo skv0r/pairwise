@@ -56,7 +56,9 @@ const Input: React.FC<InputFieldsProps> = ({
         );
     }
 
-    const inputClass = hint ? styles.input_with_hint : styles.input;
+    const inputClass = hint
+        ? `${styles.input} ${styles.input_with_hint}`
+        : styles.input;
 
     return (
         <div className={groupClass}
