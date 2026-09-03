@@ -1,7 +1,6 @@
 import Link from "next/link";
-import FeatureCard from "./ui/FeatureCard";
+import FeatureCard from "./ui/FeatureCard/FeatureCard";
 import styles from "./page.module.css";
-import Input from "./ui/Input"
 
 export default function Home() {
     return (
@@ -10,16 +9,24 @@ export default function Home() {
             <p className={styles.page__lead}>
                 Приложение решает проблему поиска коворкинг-зон для совместных встреч с единомышленниками, разбора трендов, рабочих проблем. Подбор мест идёт на основе общих интересов, стека посетителей и проектов.
             </p>
-            <section className={styles.page__section} aria-labelledby="audience-title">
-                <h2 className={styles.page__subtitle} id="audience-title">
+            <section className={styles.page__section}
+                aria-labelledby="audience-title"
+            >
+                <h2 className={styles.page__subtitle}
+                    id="audience-title"
+                >
                     Целевая аудитория
                 </h2>
                 <p className={styles.page__text}>
                     Разработчики, фаундеры и люди из IT-сферы, которым нужны очные встречи по делу.
                 </p>
             </section>
-            <section className={styles.page__section} aria-labelledby="features-title">
-                <h2 className={styles.page__subtitle} id="features-title">
+            <section className={styles.page__section}
+                aria-labelledby="features-title"
+            >
+                <h2 className={styles.page__subtitle}
+                    id="features-title"
+                >
                     Основные функции
                 </h2>
                 <div className={styles.page__features}>
@@ -37,10 +44,12 @@ export default function Home() {
                     />
                 </div>
             </section>
-            <Link href="/about" className={styles.page__link}>
+            <Link href="/about"
+                className={styles.page__link}
+            >
                 О нас
             </Link>
-            <Input maxWidth={300}/>
+
         </main>
     );
 }

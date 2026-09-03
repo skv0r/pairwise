@@ -1,0 +1,13 @@
+.register {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.register__content {
+    position: relative;
+    z-index: 1;
+}
