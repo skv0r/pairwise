@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FeatureCard from "./ui/FeatureCard";
 import styles from "./page.module.css";
+import Input from "./ui/Input"
 
 export default function Home() {
     return (
@@ -39,6 +40,7 @@ export default function Home() {
             <Link href="/about" className={styles.page__link}>
                 О нас
             </Link>
+            <Input maxWidth={300}/>
         </main>
     );
 }
