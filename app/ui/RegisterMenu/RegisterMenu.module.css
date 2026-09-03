@@ -1,0 +1,26 @@
+.register__title {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    text-align: center;
+    color: #1c1917;
+}
+
+.register__form {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: 24px;
+
+    background-color: white;
+    border-radius: 12px;
+}
+
+.register__form__item {
+    margin-bottom: 8px;
+}
+
+.register__form__submit {
+    display: flex;
+    justify-content: center;
+}
