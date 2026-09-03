@@ -5,9 +5,13 @@ const About = () => {
   return (
     <>
       <header className={styles.header}>
-        <div className={styles.header__track} aria-hidden="true">
+        <div className={styles.header__track}
+            aria-hidden="true"
+        >
           {Array.from({ length: 6 }, (_, index) => (
-            <span key={index} className={styles.header__text}>
+            <span key={index}
+                className={styles.header__text}
+            >
               Платформа для поиска коворкинг-зон и единомышленников
             </span>
           ))}
@@ -64,7 +68,9 @@ const About = () => {
             </ul>
           </section>
           <nav className={styles.idea__nav}>
-            <Link href="/" className={styles.idea__nav__item}>
+            <Link href="/"
+                className={styles.idea__nav__item}
+            >
               Вернуться на главную страницу
             </Link>
           </nav>

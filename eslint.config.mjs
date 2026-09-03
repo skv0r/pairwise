@@ -13,12 +13,12 @@ const eslintConfig = defineConfig([
     },
     rules: {
       // Переносим каждый пропс на новую строку, если их больше одного
-      "@stylistic/jsx-max-props-per-line": ["error", { maximum: 1, when: "multiline" }],
+      "@stylistic/jsx-max-props-per-line": ["error", { maximum: 1, when: "always" }],
       
       // Переносит закрывающую скобку '>' на новую строку и выравнивает её по тегу
       "@stylistic/jsx-closing-bracket-location": ["error", "tag-aligned"],
       
-      // Отступы для перенесенных пропсов (4 пробела, как в вашем stylelint)
+      // Отступы для перенесенных пропсов (4 пробела)
       "@stylistic/jsx-indent-props": ["error", 4],
     },
   },
