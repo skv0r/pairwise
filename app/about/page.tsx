@@ -41,35 +41,35 @@ const About = () => {
           <section className={styles.idea__block}>
             <h2 className={styles.idea__subtitle}>Предполагаемые разделы приложения</h2>
             <ul className={styles.idea__list}>
-              <li className={styles.idea__list__item}>главная страница;</li>
-              <li className={styles.idea__list__item}>каталог коворкинг-зон;</li>
-              <li className={styles.idea__list__item}>страница отдельной зоны;</li>
-              <li className={styles.idea__list__item}>галерея и карта;</li>
-              <li className={styles.idea__list__item}>личный кабинет;</li>
-              <li className={styles.idea__list__item}>вход и регистрация;</li>
-              <li className={styles.idea__list__item}>о проекте.</li>
+              <li className={styles.idea__item}>главная страница;</li>
+              <li className={styles.idea__item}>каталог коворкинг-зон;</li>
+              <li className={styles.idea__item}>страница отдельной зоны;</li>
+              <li className={styles.idea__item}>галерея и карта;</li>
+              <li className={styles.idea__item}>личный кабинет;</li>
+              <li className={styles.idea__item}>вход и регистрация;</li>
+              <li className={styles.idea__item}>о проекте.</li>
             </ul>
           </section>
           <section className={styles.idea__block}>
             <h2 className={styles.idea__subtitle}>Предполагаемые функции</h2>
             <ul className={styles.idea__list}>
-              <li className={styles.idea__list__item}>
+              <li className={styles.idea__item}>
                 Каталог площадок с фильтрами: часто встречающийся стек, место работы, область работы.
               </li>
-              <li className={styles.idea__list__item}>
+              <li className={styles.idea__item}>
                 Сохранение избранных точек для следующих встреч. Список посещённых точек с личным отзывом.
               </li>
-              <li className={styles.idea__list__item}>
+              <li className={styles.idea__item}>
                 Разделение на несколько уровней пользователей: обычный пользователь, подтверждённый пользователь с расширенными возможностями, администратор.
               </li>
-              <li className={styles.idea__list__item}>
+              <li className={styles.idea__item}>
                 Планирование посещения места с другими пользователями в определённый день и время.
               </li>
             </ul>
           </section>
           <nav className={styles.idea__nav}>
             <Link href="/"
-                className={styles.idea__nav__item}
+                className={styles.idea__link}
             >
               Вернуться на главную страницу
             </Link>

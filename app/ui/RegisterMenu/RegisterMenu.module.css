@@ -1,5 +1,5 @@
 .register__title {
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 
     font-weight: 700;
     text-align: center;
@@ -10,17 +10,17 @@
     display: flex;
     flex-direction: column;
     width: max-content;
-    padding: 24px;
+    padding: 1.5rem;
 
     background-color: white;
-    border-radius: 12px;
+    border-radius: 0.75rem;
 }
 
-.register__form__item {
-    margin-bottom: 8px;
+.register__item {
+    margin-bottom: 0.5rem;
 }
 
-.register__form__submit {
+.register__submit {
     display: flex;
     justify-content: center;
 }

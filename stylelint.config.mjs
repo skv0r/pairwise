@@ -1,8 +1,38 @@
 /** @type {import("stylelint").Config} */
+const bemWord = "[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*";
+
 const config = {
-  plugins: ["stylelint-order", "@stylistic/stylelint-plugin"],
+  plugins: ["stylelint-order", "@stylistic/stylelint-plugin", "stylelint-selector-bem-pattern"],
   ignoreFiles: ["**/.next/**", "**/node_modules/**"],
   rules: {
+    "plugin/selector-bem-pattern": {
+      implicitComponents: ["app/**/*.module.css"],
+      ignoreSelectors: [":root", "html", "body", "\\*"],
+      componentSelectors: () => {
+        const element = `(?:__${bemWord})?`;
+        const modifier = `(?:(?:_|--)${bemWord}){0,2}`;
+        return new RegExp(`^\\.${bemWord}${element}${modifier}$`);
+      },
+    },
+    // rem — текст и ритм страницы; em — внутри кнопки/инпута; px — рамка, тень, иконка.
+    // Правило только подсвечивает, --fix единицы не переписывает.
+    "unit-allowed-list": ["px", "em", "rem", "%", "s", "ms", "deg", "fr", "vw", "vh", "dvh", "svh", "lvh"],
+    "declaration-property-unit-allowed-list": {
+      "font-size": ["rem"],
+      "line-height": [],
+      "letter-spacing": ["em"],
+      "text-underline-offset": ["em"],
+      "/^padding/": ["rem", "em"],
+      "/^margin/": ["rem", "em", "vw"],
+      "/^(row-|column-)?gap$/": ["rem", "em"],
+      "/^border(-(top|right|bottom|left))?(-width)?$/": ["px"],
+      "outline": ["px"],
+      "outline-width": ["px"],
+      "box-shadow": ["px"],
+      "border-radius": ["rem", "%"],
+      "/^(min-|max-)?(width|height)$/": ["rem", "em", "px", "%", "vh", "dvh", "svh", "lvh"],
+      "/^(top|right|bottom|left|inset)$/": ["rem", "em", "%"],
+    },
     "@stylistic/indentation": 4,
     "order/properties-order": [
       {

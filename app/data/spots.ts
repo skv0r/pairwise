@@ -1,16 +1,82 @@
 
-type SpotType = 
+export type SpotType =
     {
         id: number,
         name: string,
+        description: string,
         city: string,
         adress: string,
+        stack: string[],
+        image: string,
+        coords: {x: number, y: number},
+        createdAt: Date,
     }
 
 export const spots: SpotType[] = [
     {
-        id: 0, 
+        id: 0,
         name: "Точка Кипения",
-        city: "Санкт-Петербург", 
-        adress: "Большая Морская, д. 67, лит. А"
-    }]
+        description: "Площадка для питчей, воркшопов и встреч команд. Часто собираются люди из акселераторов и продуктовых стартапов.",
+        city: "Санкт-Петербург",
+        adress: "Большая Морская, д. 67, лит. А",
+        stack: ["Product", "JavaScript", "Python"],
+        image: "/images/spots/tochka-kipeniya.jpg",
+        coords: { x: 30.2884, y: 59.9318 },
+        createdAt: new Date("2023-03-12"),
+    },
+    {
+        id: 1,
+        name: "GrowUp Ligovsky",
+        description: "Коворкинг у Лиговского: длинные столы, переговорки и вечерние митапы по фронтенду.",
+        city: "Санкт-Петербург",
+        adress: "Лиговский проспект, д. 50, корп. 12",
+        stack: ["TypeScript", "React", "Next.js"],
+        image: "/images/spots/growup-ligovsky.jpg",
+        coords: { x: 30.3612, y: 59.9274 },
+        createdAt: new Date("2023-06-01"),
+    },
+    {
+        id: 2,
+        name: "Bench на Петроградке",
+        description: "Тихий этаж для парной работы над задачами. Много мобильных и бэкенд-разработчиков.",
+        city: "Санкт-Петербург",
+        adress: "Каменноостровский проспект, д. 10",
+        stack: ["Kotlin", "Swift", "Go"],
+        image: "/images/spots/bench-petrogradka.jpg",
+        coords: { x: 30.3148, y: 59.9601 },
+        createdAt: new Date("2023-09-18"),
+    },
+    {
+        id: 3,
+        name: "Севкабель Порт, коворкинг",
+        description: "Открытое пространство у воды. Подходит, чтобы разобрать тренды и показать демо с ноутбука.",
+        city: "Санкт-Петербург",
+        adress: "Кожевенная линия, д. 40",
+        stack: ["UX", "Figma", "React"],
+        image: "/images/spots/sevkabel.jpg",
+        coords: { x: 30.2419, y: 59.9246 },
+        createdAt: new Date("2024-01-09"),
+    },
+    {
+        id: 4,
+        name: "ITMO Cowork",
+        description: "Кампусная зона возле ИТМО: студенты, ML-кружки и вечерние разборы пет-проектов.",
+        city: "Санкт-Петербург",
+        adress: "Кронверкский проспект, д. 49",
+        stack: ["Python", "ML", "C++"],
+        image: "/images/spots/itmo-cowork.jpg",
+        coords: { x: 30.3101, y: 59.9571 },
+        createdAt: new Date("2024-04-22"),
+    },
+    {
+        id: 5,
+        name: "Практик на Васильевском",
+        description: "Небольшой коворкинг с переговоркой на двоих. Удобно сесть с человеком из той же области работы.",
+        city: "Санкт-Петербург",
+        adress: "Средний проспект В.О., д. 36/40",
+        stack: ["Java", "Spring", "DevOps"],
+        image: "/images/spots/praktik-vo.jpg",
+        coords: { x: 30.2776, y: 59.9423 },
+        createdAt: new Date("2024-08-05"),
+    },
+]

@@ -28,6 +28,7 @@
     "eslint-config-next": "16.3.4",
     "stylelint": "^16.26.1",
     "stylelint-order": "^6.0.4",
+    "stylelint-selector-bem-pattern": "^4.0.1",
     "typescript": "^5"
   }
 }

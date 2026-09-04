@@ -1,0 +1,14 @@
+.catalog {
+    display: flex;
+    justify-content: center;
+}
+
+.catalog__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.catalog__item {
+    list-style: none;
+}

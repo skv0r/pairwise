@@ -23,7 +23,7 @@ const defaults: Record<InputVariant, { type: string; label: string; placeholder:
 const Input: React.FC<InputFieldsProps> = ({
     variant = "text",
     label,
-    maxWidth = "300px",
+    maxWidth = "18.75rem",
     placeholder,
     className,
     ...props
