@@ -1,4 +1,44 @@
 .header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+    align-items: center;  
+    width: 100%; 
+    padding: 0.75rem 1rem;
+
+    background-color: white;
+}
+
+.header__logoLink {
+    justify-self: start;
+
     display: flex;
-    justify-content: space-between;
+
+    transform: translateY(-2px); 
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    margin: 0 auto;
+}
+
+.header__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: auto;     
+    justify-self: end;
+    gap: 2rem; 
+}
+
+.header__switcher {
+
+}
+
+.header__button {
+    max-width: 100px;
+    justify-self: end
 }

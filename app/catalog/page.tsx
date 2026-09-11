@@ -7,7 +7,8 @@ const CatalogPage = () => {
         <main className={styles.catalog}>
             <ul className={styles.catalog__list}>
                 {spots.map((spot) => (
-                    <li key={spot.id}
+                    <li
+                        key={spot.id}
                         className={styles.catalog__item}
                     >
                         <SpotCard spot={spot} />

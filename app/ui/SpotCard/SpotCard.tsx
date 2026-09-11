@@ -16,7 +16,8 @@ const SpotCard = ({ spot }: SpotCardProps) => {
                     Stack на площадке: {spot.stack.join(" ")}
                 </p>
             </div>
-            <Link href={`/catalog/${spot.id}`}
+            <Link
+                href={`/catalog/${spot.id}`}
                 className={styles.card__link}
             >
                 Перейти к площадке

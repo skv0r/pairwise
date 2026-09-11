@@ -1,4 +1,6 @@
-.register__title {
+
+
+.login__title {
     margin-bottom: 0.75rem;
 
     font-weight: 700;
@@ -6,25 +8,21 @@
     color: #1c1917;
 }
 
-.register__form {
+.login__form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-
     width: max-content;
     padding: 1.5rem;
-
 
     background-color: white;
     border-radius: 0.75rem;
 }
 
-.register__item {
+.login__item {
     margin-bottom: 0.5rem;
 }
 
-.register__submit {
+.login__submit {
     display: flex;
     justify-content: center;
 }

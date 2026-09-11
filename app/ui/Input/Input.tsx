@@ -38,7 +38,8 @@ const Input: React.FC<InputFieldsProps> = ({
 
     if (variant === "checkbox") {
         return (
-            <div className={groupClass}
+            <div
+                className={groupClass}
                 style={{ width: maxWidth, maxWidth }}
             >
                 <label className={styles.input__checkbox_row}>
@@ -61,13 +62,16 @@ const Input: React.FC<InputFieldsProps> = ({
         : styles.input;
 
     return (
-        <div className={groupClass}
+        <div
+            className={groupClass}
             style={{ width: maxWidth, maxWidth }}
         >
             {resolvedLabel && (
-                <label className={styles.label}
+                <label
+                    className={styles.label}
                     htmlFor={variant}
-                >{resolvedLabel}</label>
+                >{resolvedLabel}
+                </label>
             )}
             <div className={styles.input__wrapper}>
                 <input

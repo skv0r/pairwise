@@ -1,9 +1,14 @@
-import Input from "../../ui/Input/Input"
+import LoginMenu from "../../ui/LoginMenu/LoginMenu";
+import styles from "./LoginPage.module.css"
 
 
 const LoginPage = () => {
     return (
-        <Input variant="text"/>
+        <main className={styles.login}>
+            <div className={styles.login__content}>
+                <LoginMenu/>
+            </div>
+        </main>
     )
 }
 

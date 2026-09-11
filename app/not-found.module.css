@@ -1,6 +1,15 @@
 .notfound {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.notfound__text {
+    margin-bottom: 1rem;
+}
+
+.notfound__return {
+    border-bottom: 1px blue solid;
 }
