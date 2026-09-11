@@ -34,10 +34,6 @@
     gap: 2rem; 
 }
 
-.header__switcher {
-
-}
-
 .header__button {
     max-width: 100px;
     justify-self: end

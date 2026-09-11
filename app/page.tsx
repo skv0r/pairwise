@@ -3,7 +3,6 @@ import FeatureCard from "./ui/FeatureCard/FeatureCard";
 import styles from "./page.module.css";
 import Image from "next/image"
 import logo from "../public/logo.svg"
-import Header from "./ui/Header/Header";
 
 
 export default function Home() {

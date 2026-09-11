@@ -55,7 +55,11 @@ const Header = () => {
                     width={20}
                     height={20}
                 />
-                <Button className={styles.header__button}>Вход</Button>
+                <Link
+                    href="/auth/login"
+                    className={styles.header__button}
+                >Вход
+                </Link>
             </div>
         </header>
     )
