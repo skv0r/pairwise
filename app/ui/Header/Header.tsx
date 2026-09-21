@@ -3,8 +3,15 @@ import styles from "./Header.module.css"
 import logo from "../../../public/logo.svg"
 import sun from "../../../public/sun.svg"
 import Image from "next/image"
-import Button from "../Button/Button";
 
+
+const navItems = [
+    { name: "Главная", route: "/" },
+    { name: "Каталог", route: "/catalog" },
+    { name: "Карта", route: "/map" },
+    { name: "Избранное", route: "/saved" },
+    { name: "О нас", route: "/about" },
+];
 
 const Header = () => {
     return (
@@ -21,31 +28,16 @@ const Header = () => {
                 />
             </Link>
             <nav className={styles.navigation}>
-                <Link
-                    href="/"
-                    className={styles.navigation__item}
-                >Главная
-                </Link>
-                <Link
-                    href="/catalog"
-                    className={styles.navigation__item}
-                >Каталог
-                </Link>
-                <Link
-                    href="/map"
-                    className={styles.navigation__item}
-                >Карта
-                </Link>
-                <Link
-                    href="/saved"
-                    className={styles.navigation__item}
-                >Избранное
-                </Link>
-                <Link 
-                    href="/about"
-                    className={styles.navigation__item}
-                >О нас
-                </Link>
+                {navItems.map( (item) => { 
+                return (
+                    <Link
+                        key={item.route} 
+                        href={item.route}
+                        className={styles.navigation__item}
+                    >
+                        {item.name}
+                    </Link>
+                )})}
             </nav>
             <div className={styles.header__buttons}>
                 <Image 

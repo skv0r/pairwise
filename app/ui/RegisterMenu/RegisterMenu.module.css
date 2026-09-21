@@ -10,10 +10,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1rem;
 
     width: max-content;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
 
 
     background-color: white;
@@ -27,4 +26,13 @@
 .register__submit {
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.register__link {
+    width: fit-content;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }

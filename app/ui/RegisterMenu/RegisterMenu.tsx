@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../Button/Button";
 import Input from "../Input/Input";
 import styles from "./RegisterMenu.module.css";
@@ -56,6 +57,12 @@ const RegisterMenu = () => {
                 <div className={styles.register__submit}>
                     <Button type="submit">Зарегистрироваться</Button>
                 </div>
+                <Link 
+                    href="/auth/login"
+                    className={styles.register__link}
+                >
+                    Вход в аккаунт
+                </Link>
             </form>
         </div>
     )
