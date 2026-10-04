@@ -1,17 +1,9 @@
 import Link from "next/link";
-import styles from "./Header.module.css"
-import logo from "../../../public/logo.svg"
-import sun from "../../../public/sun.svg"
-import Image from "next/image"
-
-
-const navItems = [
-    { name: "Главная", route: "/" },
-    { name: "Каталог", route: "/catalog" },
-    { name: "Карта", route: "/map" },
-    { name: "Избранное", route: "/saved" },
-    { name: "О нас", route: "/about" },
-];
+import Image from "next/image";
+import AppNav from "../AppNav/AppNav";
+import styles from "./Header.module.css";
+import logo from "../../../public/logo.svg";
+import sun from "../../../public/sun.svg";
 
 const Header = () => {
     return (
@@ -20,41 +12,31 @@ const Header = () => {
                 href="/"
                 className={styles.header__logoLink}
             >
-                <Image 
+                <Image
                     src={logo}
-                    alt="Логотип" 
+                    alt="Логотип"
                     width={90}
                     height={30}
                 />
             </Link>
-            <nav className={styles.navigation}>
-                {navItems.map( (item) => { 
-                return (
-                    <Link
-                        key={item.route} 
-                        href={item.route}
-                        className={styles.navigation__item}
-                    >
-                        {item.name}
-                    </Link>
-                )})}
-            </nav>
+            <AppNav />
             <div className={styles.header__buttons}>
-                <Image 
+                <Image
                     src={sun}
                     className={styles.header__switcher}
-                    alt="Логотип" 
+                    alt="Переключатель темы"
                     width={20}
                     height={20}
                 />
                 <Link
                     href="/auth/login"
                     className={styles.header__button}
-                >Вход
+                >
+                    Вход
                 </Link>
             </div>
         </header>
-    )
-}
+    );
+};
 
 export default Header;

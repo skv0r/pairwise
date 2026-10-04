@@ -1,0 +1,12 @@
+Источники фото для отчёта (ЛР3). Файлы лежат в public/images/spots/.
+
+tochka-kipeniya.jpg — интерьер площадки сети «Точки кипения» (мероприятие).
+growup-ligovsky.jpg — коворкинг / open space (иллюстрация площадки GrowUp Ligovsky).
+bench-petrogradka.jpg — рабочее пространство (иллюстрация Bench на Петроградке).
+sevkabel.jpg — Wikimedia Commons: Sevkabel Port 01.jpg
+itmo-cowork.jpg — Wikimedia Commons: ITMO main building 2.jpg (Кронверкский пр., 49)
+praktik-vo.jpg — Васильевский остров / коворкинг (иллюстрация «Практик на В.О.»)
+
+При сдаче уточните лицензию и точную ссылку на оригинал для каждого файла в отчёте.
+
+Иконки технологий: public/icons/skills/ — Devicon (MIT), Simple Icons (CC0), UX — локальная SVG.

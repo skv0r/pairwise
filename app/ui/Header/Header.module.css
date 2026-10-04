@@ -17,14 +17,6 @@
     transform: translateY(-2px); 
 }
 
-.navigation {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-
-    margin: 0 auto;
-}
-
 .header__buttons {
     display: flex;
     justify-content: center;

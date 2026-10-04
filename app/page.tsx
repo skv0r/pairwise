@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
+import { features } from "./data/features";
 import FeatureCard from "./ui/FeatureCard/FeatureCard";
 import styles from "./page.module.css";
-import Image from "next/image"
-import logo from "../public/logo.svg"
+import logo from "../public/logo.svg";
 
 
 export default function Home() {
@@ -45,18 +46,15 @@ export default function Home() {
                         Основные функции
                     </h2>
                     <div className={styles.page__features}>
-                        <FeatureCard
-                            title="Каталог площадок"
-                            description="Просмотр коворкинг-зон с фильтрами: часто встречающийся стек, место работы, область работы."
-                        />
-                        <FeatureCard
-                            title="Избранное и отзывы"
-                            description="Сохранение площадок для следующих встреч и список посещённых точек с личным отзывом."
-                        />
-                        <FeatureCard
-                            title="Совместные визиты"
-                            description="Планирование посещения места с другими пользователями в определённый день и время."
-                        />
+                        {features.map((feature) => (
+                            <FeatureCard
+                                key={feature.id}
+                                title={feature.title}
+                                description={feature.description}
+                                image={feature.image}
+                                imageAlt={feature.imageAlt}
+                            />
+                        ))}
                     </div>
                 </section>
                 <Link
