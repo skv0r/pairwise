@@ -11,5 +11,5 @@
 }
 
 .notfound__return {
-    border-bottom: 1px blue solid;
+    border-bottom: 1px var(--color-primary) solid;
 }

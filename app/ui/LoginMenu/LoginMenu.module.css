@@ -5,7 +5,7 @@
 
     font-weight: 700;
     text-align: center;
-    color: #1c1917;
+    color: var(--color-text);
 }
 
 .login__form {
@@ -14,7 +14,7 @@
     width: max-content;
     padding: 1rem 1.5rem;
 
-    background-color: white;
+    background-color: var(--color-surface);
     border-radius: 0.75rem;
 }
 
@@ -30,7 +30,7 @@
 
 .login__link {
     width: fit-content;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--color-primary);
     display: flex;
     justify-content: center;
     align-self: center;

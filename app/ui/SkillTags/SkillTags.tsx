@@ -15,12 +15,12 @@ const SkillTags = ({ skills, className }: SkillTagsProps) => {
     return (
         <ul className={listClass}>
             {skills.map((skill) => {
-                const { category, icon } = getSkillMeta(skill);
+                const { icon } = getSkillMeta(skill);
 
                 return (
                     <li
                         key={skill}
-                        className={`${styles.tag} ${styles[`tag_category_${category}`]}`}
+                        className={styles.tag}
                     >
                         <Image
                             src={icon}

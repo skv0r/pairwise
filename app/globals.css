@@ -1,11 +1,17 @@
 :root {
+    --color-primary: #111111;
+    --color-primary-hover: #333333;
     --color-bg: #f1f1f1;
     --color-surface: #ffffff;
+    --color-border: #d0d0d0;
+    --color-shadow: color-mix(in srgb, var(--color-primary) 8%, transparent);
+    --color-shadow-hover: color-mix(in srgb, var(--color-primary) 16%, transparent);
+
     --color-text: #111111;
-    --color-text-muted: #444444;
-    --color-header-bg: #000000;
-    --color-header-text: #ffffff;
-    --color-border: #111111;
+    --color-text-muted: #555555;
+    --color-text-inverse: #ffffff;
+
+    --color-error: #b91c1c;
 }
 
 * {

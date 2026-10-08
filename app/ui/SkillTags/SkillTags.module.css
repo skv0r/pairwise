@@ -17,7 +17,9 @@
     line-height: 1.2;
 
     list-style: none;
-    border: 1px solid transparent;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
     border-radius: 999px;
 }
 
@@ -30,58 +32,4 @@
 
 .tag__label {
     white-space: nowrap;
-}
-
-.tag_category_javascript {
-    color: #854d0e;
-    background-color: #fefce8;
-    border-color: #fde047;
-}
-
-.tag_category_java {
-    color: #9a3412;
-    background-color: #fff7ed;
-    border-color: #fdba74;
-}
-
-.tag_category_mobile {
-    color: #5b21b6;
-    background-color: #f5f3ff;
-    border-color: #ddd6fe;
-}
-
-.tag_category_backend {
-    color: #166534;
-    background-color: #f0fdf4;
-    border-color: #bbf7d0;
-}
-
-.tag_category_design {
-    color: #9d174d;
-    background-color: #fdf2f8;
-    border-color: #fbcfe8;
-}
-
-.tag_category_ml {
-    color: #3730a3;
-    background-color: #eef2ff;
-    border-color: #c7d2fe;
-}
-
-.tag_category_devops {
-    color: #0f766e;
-    background-color: #f0fdfa;
-    border-color: #99f6e4;
-}
-
-.tag_category_systems {
-    color: #334155;
-    background-color: #f8fafc;
-    border-color: #cbd5e1;
-}
-
-.tag_category_product {
-    color: #92400e;
-    background-color: #fffbeb;
-    border-color: #fde68a;
 }
